@@ -4,8 +4,6 @@ import StocksAPI from "../../API/stocks_api";
 const SplashPageSearchBar = () => {
   const [searchVal, setSearchVal] = useState("");
   const [searchData, setSearchData] = useState({});
-  // state
-  // effect
 
   useEffect(() => {
     StocksAPI.get_ticker(searchVal)
