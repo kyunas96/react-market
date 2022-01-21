@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "create-react-app": "^5.0.0",
-    "finnhub": "^1.2.10"
+    "create-react-app": "^5.0.0"
   }
 }

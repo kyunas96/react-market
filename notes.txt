@@ -1,0 +1,7 @@
+Component List:
+
+- Splash Page
+- Splash Page Search Bar
+- Splash Page News
+- Ticker Results
+- Header/Nav
