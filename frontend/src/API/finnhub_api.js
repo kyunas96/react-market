@@ -1,8 +1,11 @@
 import keys from '../keys.js'
-import finnhub from 'finnhub';
+import axios from 'axios'
 
-const api_key = finnhub.ApiClient.instance.authentications['api_key'];
-api_key.api_key = keys.finnhub_key;
-const finnhub_client = new finnhub.DefaultApi();
 
-export default finnhub_client;
+const FinnhubAPI = axios.create({
+  baseURL: 'https://finnhub.io/api/v1',
+  timeout: 1000,
+  headers: {'X-Finnhub-Token' : 'keys.finnhub_key'}
+})
+
+export default FinnhubAPI;

@@ -1,12 +1,4 @@
-import FinnhubClient from './finnhub_api';
+import FinnhubAPI from "./finnhub_api";
 
-const symbol_search = (ticker, callback, errorCallback) => {
-  FinnhubClient.symbolSearch(ticker, (error, data, response) => {
-    console.log(response);
-    // callback(response);
-  });
-}
+const get_ticker = (ticker) => FinnhubAPI.get(`/search?q=${ticker}`)
 
-export default {
-  symbol_search
-}
